@@ -1,9 +1,8 @@
 # RaspberryPi Python I2C
-Python library for accessing the Raspberry Pi I2C
 
-It is compatible with Raspberry Pi I2C buses.
-
-To manually install do so by running these commands:
+# Introduction
+This python library provides a smbus I2C access at a higher level.
+Instead of using a bus object, this library using a device object to access individual I2C devices.
 
 # Installation
   
@@ -15,3 +14,14 @@ To manually install do so by running these commands:
   sudo python setup.py install
   sudo python3 setup.py install
   ```
+
+# Quick Start
+Using this software is easy.
+This example accesses the device 0xF4 on bus 1 and writes 0x5B to register 0xA1.
+.. code:: python
+
+    import Python_I2C as I2C # import library
+
+    dev = I2C.Device(0xF4, 1) # access device
+    
+    dev.write8(0xA1, 0x5B) # write 8 bits
