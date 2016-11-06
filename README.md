@@ -17,8 +17,8 @@ Instead of using a bus object, this library using a device object to access indi
 
 # Quick Start
 Using this software is easy.
+
 This example accesses the device 0xF4 on bus 1 and writes 0x5B to register 0xA1.
-.. code:: python
 
     import Python_I2C as I2C # import library
 
