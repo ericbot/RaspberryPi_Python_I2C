@@ -1,5 +1,4 @@
 from __future__ import nested_scopes, generators, division, absolute_import, with_statement, print_function, unicode_literals
-import sys as _sys
 from . import smbus as _smbus
 
 def _comp(val, bits):
