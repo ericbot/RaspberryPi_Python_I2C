@@ -1,7 +1,7 @@
 # RaspberryPi Python I2C
 
 # Introduction
-This python library provides a smbus I2C access at a higher level.
+This python library provides an smbus I2C access at a higher level.
 Instead of using a bus object, this library using a device object to access individual I2C devices.
 
 # Installation
